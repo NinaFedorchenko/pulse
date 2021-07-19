@@ -2,17 +2,96 @@
 }
 
 @media (max-width: 992px) {
+  .title {
+    &_left {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+  .consultation {
+    &__descr {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .feed-form {
+      width: 40%;
+      margin: 0 auto;
+      input {
+        height: 70px;
+      }
+    }
+    .button {
+      &_submit {
+        height: 75px;
+        font-size: 24px;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .container {
     max-width: 640px;
   }
+  .title {
+    &_left {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+  .consultation {
+    &__descr {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .feed-form {
+      width: 60%;
+      margin: 0 auto;
+      input {
+        height: 70px;
+      }
+    }
+    .button {
+      &_submit {
+        height: 75px;
+        font-size: 24px;
+      }
+    }
+  }
+  .carousel {
+    padding: 61px 0 20px 0;
+    .container {
+      max-width: 400px;
+    }
+    &__inner {
+      max-width: 100%;
+    }
+    .slick-dots {
+      padding-top: 30px;
+      display: flex;
+      justify-content: center;
+      li {
+        list-style-type: none;
+      }
+      button {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        font-size: 0;
+        padding: 0;
+        background-color: $main-color;
+        border: none;
+        margin-left: 5px;
+      }
+    }
+  }
 }
 
 @media (max-width: 576px) {
   .container {
-    max-width: 560px;
+    max-width: 540px;
   }
   .promo {
     &__wrapper {
@@ -33,13 +112,44 @@
       flex-direction: column;
     }
     &__block {
-        max-width: 300px;
-      }
+      max-width: 300px;
+    }
     &__subtitle {
       font-size: 24px;
     }
     &__descr {
       font-size: 18px;
+    }
+  }
+  .title {
+    &_left {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+  .consultation {
+    &__descr {
+      text-align: center;
+    }
+    .feed-form {
+      width: 70%;
+      margin: 36px auto;
+      input {
+        height: 70px;
+      }
+    }
+    .button {
+      &_submit {
+        height: 75px;
+      }
+    }
+  }
+  .catalog {
+    .catalog-item {
+      width: 250px;
+      &__price {
+        font-size: 14px;
+      }
     }
   }
 }
