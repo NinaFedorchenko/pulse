@@ -179,6 +179,7 @@
   }
   .button {
     width: 130px;
+    height: 40px;
     font-size: 12px;
     &_main {
       width: 210px;
@@ -253,10 +254,38 @@
       font-size: 12px;
     }
   }
+
   .footer {
     .footer__info {
       width: 300px;
       padding: 20px 45px 20px 45px;
+    }
+  }
+  .overlay {
+    .modal {
+      width: 250px;
+      padding: 38px 10px 20px 10px;
+      &__close {
+        right: -25px;
+        font-size: 30px;
+      }
+      &__subtitle {
+        font-size: 16px;
+      }
+      &__descr {
+        font-size: 12px;
+      }
+    }
+    .feed-form {
+      width: 230px;
+    }
+  }
+  div {
+    .pageup {
+      bottom: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
     }
   }
 }
