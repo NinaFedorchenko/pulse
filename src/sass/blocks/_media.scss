@@ -1,0 +1,145 @@
+@media ( max-width: 1200px) {
+    .container {
+        max-width: 800px;
+    }
+    .title_left {
+          font-size: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+    .container {
+      max-width: 750px;
+    }
+    .advantages {
+        &__item {
+            max-width: 225px;
+        }
+        &__subtitle {
+          font-size: 16px;
+        }
+        &__descr {
+          font-size: 12px;
+        }
+      }
+    .title_left {
+      text-align: center;
+    }
+    .consultation {
+      text-align: center;
+    }
+    .feed-form {
+      margin: 0 auto;
+      margin-top: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+      }
+      .promo {
+        &__wrapper {
+          align-items: center;
+        }
+      }
+      .header {
+        &__logo {
+          width: 200px;
+          img {
+            width: 100%;
+          }
+        }
+        &__official {
+          font-size: 10px;
+          span {
+            font-size: 16px;
+          }
+        }
+        &__phone {
+          font-size: 16px;
+          font-weight: 700;
+        }
+        &__contacts {
+          align-items: center;
+        }
+      }
+      .advantages {
+        &__item {
+            max-width: 170px;
+        }
+        &__subtitle {
+          font-size: 12px;
+        }
+      }
+}
+
+@media (max-width: 576px) {
+    .container {
+      width: 100%;
+      padding: 0 10px;
+    }
+    .header {
+        &__logo {
+            width: 130px;
+            img {
+              width: 100%;
+            }
+          }
+        &__official {
+          display: none;
+        }
+        &__phone {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    .promo {
+        &__header {
+          font-size: 36px;
+          text-align: center;
+        }
+        &__subheader {
+          font-size: 22px;
+          text-align: center;
+        }
+        &__icons {
+          width: 300px;
+        }
+        &__icon {
+          font-size: 12px;
+        }
+        &__link {
+          font-size: 14px;
+        }
+      }
+      .advantages {
+        &__wrapper {
+            margin-top: 30px;
+            flex-wrap: wrap;
+          }
+          &__item {
+            margin: 0 auto;
+            margin-top: 30px;
+            max-width: 238px;
+        }
+        &__subtitle {
+            margin-top: 10px;
+        }
+        &__descr {
+            margin-top: 8px;
+        }
+      }
+      .title_left {
+        font-size: 22px;
+      }
+      .consultation {
+        padding-top: 70px;
+        &__descr {
+          font-size: 18px;
+      }
+      }
+      .feed-form {
+        width: 260px;
+      }  
+}
