@@ -5,6 +5,14 @@
     .title_left {
           font-size: 30px;
   }
+    .carousel {
+      .container {
+        max-width: 500px;
+      }
+      &__inner {
+        max-width: 100%;
+      }
+    }
 }
 
 @media (max-width: 992px) {
@@ -31,6 +39,41 @@
     .feed-form {
       margin: 0 auto;
       margin-top: 36px;
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      padding-top: 30px;
+      li {
+        list-style-type: none;
+      }
+      button {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        font-size: 0;
+        padding: 0;
+        background-color: #c70101;
+        border: none;
+        margin-left: 5px;
+      }
+    }
+    .footer {
+      .footer__info {
+        width: 350px;
+        height: 190px;
+        padding-top: 20px;
+      }
+      .footer__addr {
+        margin-bottom: 20px;
+      }
+      .footer__phone {
+        margin-bottom: 20px;
+      }
+      .footer__social-item {
+        width: 40px;
+        height: 40px;
+      }
     }
 }
 
@@ -72,7 +115,42 @@
           font-size: 12px;
         }
       }
-}
+      .catalog {
+        &__tabs {
+          flex-direction: column;
+        }
+        &__tab {
+          width: 320px;
+          margin-bottom: 20px;
+          &:nth-child(3) {
+            margin-bottom: 0;
+          }
+        }
+        &__content {
+          justify-content: center;
+       }
+      }
+      .feeds {
+        padding-bottom: 71px;
+        .feeds__wrapper {
+          margin-top: 50px;
+        img {
+          width: 120px;
+          height: 120px;
+          }
+        }
+        .feeds__info {
+          margin-left: 25px;
+          padding-right: 0px;
+        }
+        .feeds__subtitle {
+          font-size: 16px;
+        }
+        .feeds__descr {
+          font-size: 14px;
+        }
+      }
+    }
 
 @media (max-width: 576px) {
     .container {
@@ -142,4 +220,44 @@
       .feed-form {
         width: 260px;
       }  
+      .catalog {
+        &__tabs {
+          flex-direction: column;
+        }
+        &__tab {
+          width: 250px;
+          margin-bottom: 15px;
+       }
+      }
+      .feeds {
+        padding-bottom: 40px;
+        .feeds__wrapper {
+          margin-top: 50px;
+        img {
+          width: 50px;
+          height: 50px;
+          }
+        }
+        .feeds__info {
+          margin-left: 15px;
+          padding-right: 0px;
+        }
+        .feeds__subtitle {
+          font-size: 14px;
+        }
+        .feeds__descr {
+          font-size: 12px;
+        }
+      }
+      .footer {
+        height: 450px;
+        .footer__info {
+          width: 300px;
+          height: 170px;
+          padding: 20px 45px 20px 45px;
+        }
+        iframe {
+          height: 450px;
+        }
+      }
 }
