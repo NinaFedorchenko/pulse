@@ -260,4 +260,39 @@
           height: 450px;
         }
       }
+      .overlay {
+        .modal {
+          width: 250px;
+          min-height: 300px;
+          padding: 28px 10px 20px 10px;
+          &__close {
+            right: -25px;
+            font-size: 30px;
+          }
+          &__subtitle {
+            font-size: 16px;
+          }
+          &__descr {
+            font-size: 12px;
+          }
+        }
+        .feed-form {
+          width: 230px;
+          input {
+            height: 40px;
+          }
+        }
+      }
+      .button_submit {
+        height: 45px;
+        font-size: 14px;
+      }
+      div {
+        .pageup {
+          bottom: 10px;
+          right: 10px;
+          width: 30px;
+          height: 30px;
+        }
+      }
 }
